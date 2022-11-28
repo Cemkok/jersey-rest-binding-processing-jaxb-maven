@@ -5,6 +5,8 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
+import com.godoro.restbinding.document.Product;
+//jax-p =  processing, jax-b jax binding
 @Path("/json")
 public class JsonRest {
 	

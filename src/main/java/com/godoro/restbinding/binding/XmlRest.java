@@ -17,6 +17,8 @@ import org.glassfish.jersey.jaxb.internal.DocumentBuilderFactoryInjectionProvide
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import com.godoro.restbinding.document.Product;
+
 @Path("/Xml")
 public class XmlRest {
 	

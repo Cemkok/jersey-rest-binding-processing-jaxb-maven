@@ -1,4 +1,4 @@
-package com.godoro.restbinding.binding;
+package com.godoro.restbinding.document;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -26,6 +26,10 @@ public class Product {
 	}
 	public void setSalesPrice(double salesPrice) {
 		this.salesPrice = salesPrice;
+	}
+	@Override
+	public String toString() {
+		return "Product [productId=" + productId + ", productName=" + productName + ", salesPrice=" + salesPrice + "]";
 	}
 	
 
