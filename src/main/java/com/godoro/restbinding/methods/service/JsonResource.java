@@ -8,8 +8,10 @@ import javax.json.JsonReader;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 
 import com.godoro.restbinding.document.Product;
+import com.godoro.restbinding.document.Result;
 
 @Path("/method")
 public class JsonResource {
@@ -43,6 +45,26 @@ public class JsonResource {
 					+product.getSalesPrice());
 			
 		}
+		@POST
+		@Path("trade")
+		@Consumes("application/json; charset=UTF-8")
+		@Produces("application/json; charset=UTF-8")
+		public Result tradeBinding(Product product) {
+			System.out.println("Ürün Nesnesi : " + product.getProductId() +" "
+					+product.getProductName()+ " "
+					+product.getSalesPrice());
+			
+			Result result = new Result();
+			//Genellikle "0" hata olmadı demektir.
+			result.setResultCode("0");
+			result.setResultMessage(product.getProductName()+ "eklendi");
+			return result;
+			
+			
+			
+			
+		}
+	
 	
 
 		
