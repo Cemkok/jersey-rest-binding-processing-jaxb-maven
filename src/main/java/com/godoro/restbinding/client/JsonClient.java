@@ -55,13 +55,6 @@ public class JsonClient {
 			double salesPrice = jsonObject.getJsonNumber("salesPrice").doubleValue();
 			
 			System.out.println("Ürün: "+productId+" "+productName+" "+salesPrice);
-			
-			
-			
-			
-			
-			
-		
 		
 		
 	}
